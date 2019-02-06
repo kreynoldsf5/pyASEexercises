@@ -19,7 +19,9 @@ import requests
 
 <details><summary>Interactive Solution</summary>
 <p>
-![Alt Text](./gifs/pyExercise1.gif)
+
+![Exercise1](./gifs/pyExercise1.gif)
+      
 </p>
 </details>
 
