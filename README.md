@@ -3,7 +3,7 @@
 
 Python is an extremely common language throughout organizations -- but especially with Network Operations (NetOps) teams. Before these exercises are attempted, you should have completed the provided Python training from [Code Academy](https://www.codecademy.com/learn/learn-python-3).
 
-[## Overview](./pyOverview.md)
+## [Overview](./pyOverview.md)
 
 First, we'll do a lightening round overview of the content from the learning path. We'll briefly touch on the fundamental concepts from the self-study.
 
@@ -25,19 +25,19 @@ The webserver will respond in accordance to this table:
 
 ### Exercise Overviews
 
-[#### Exercise 1](./pyExercise1.md)
+#### [Exercise 1](./pyExercise1.md)
 
 Craft a GET request to / and ***print()*** the returned html.
 
 _10min_
 
-[#### Exercise 2](./pyExercise2.md)
+#### [Exercise 2](./pyExercise2.md)
 
 Send a POST containing the necessary JSON properties to store some data in the database.
 
 _10min_
 
-[#### Exercise 3](./pyExercise3.md)
+#### [Exercise 3](./pyExercise3.md)
 
 Return the contents of the database (GET to /data) and store as the appropiate Python data structure. Perform some rudimentary data manipulation.
 
