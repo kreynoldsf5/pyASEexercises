@@ -17,4 +17,22 @@ import requests
 ###your code here###
 ```
 
+<details><summary>Solution</summary>
+<p>
+
+#### From an interpreter -- you still have to write the script
+
+```bash
+kevin at Makpro in ~/repos/pyASEexercises on master
+$ python3
+Python 3.5.1 (default, Jul 18 2016, 14:07:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.3.0 (clang-703.0.31)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import requests
+>>> r = requests.get('http://ec2-54-191-220-106.us-west-2.compute.amazonaws.com')
+```
+
+</p>
+</details>
+
 
