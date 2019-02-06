@@ -1,0 +1,27 @@
+version: '3'
+services:
+  web:
+    build: './WebServer'
+    ports:
+      - 8181:8181
+    networks:
+      - mongo-net
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: ASEexample
+    container_name: mongo-server
+    networks:
+      - mongo-net
+    volumes:
+      - mongo-data:/data
+
+networks:
+  mongo-net:
+
+volumes:
+  mongo-data:
