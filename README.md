@@ -25,6 +25,14 @@ The webserver will respond in accordance to this table:
 
 ### Exercise Overviews
 
+For each exercise, I have provided a solution based on running python interactively. Please package your answers in scripts so they can be easily shared.
+```python
+#!/usr/bin/env python
+import requests
+
+###your code here###
+```
+
 #### [Exercise 1](./pyExercise1.md)
 
 Craft a GET request to / and ***print()*** the returned html.
