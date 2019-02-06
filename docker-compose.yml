@@ -3,7 +3,7 @@ services:
   web:
     build: './WebServer'
     ports:
-      - 8181:8181
+      - 80:8080
     networks:
       - mongo-net
     depends_on:
