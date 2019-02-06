@@ -17,11 +17,11 @@ I've written a small web server with a database backend (mongoDB) in Python (~50
 
 The webserver will respond in accordance to this table:
 
-| Method | Path  |
-|--------|-------|
-| GET    | /     |
-| GET    | /data |
-| POST   | *     |
+| Method | Path  | Result      |
+|--------|-------|-------------|
+| GET    | /*    | index.html  |
+| GET    | /data | db contents |
+| POST   | /*    | db insert   |
 
 ### Exercise Overviews
 
@@ -46,8 +46,12 @@ _15min_
 #### Extra Credit
 
 Update app.py to be a little more useful. Here are some ideas:
-
-* Implement a URI routing scheme that displays individual database entries base on path.
+* Display a proper error page when recieving requests for paths that don't exist.
+```bash
+$ curl http://example.app/foo
+HTTP/1.0 404 NOT FOUND
+```
+* Implement a URI routing scheme that displays individual database entries based on path.
 ```bash
 $ curl http://example.app/kevin
 {'name': 'kevin', 'message': 'calmer than you are'}
