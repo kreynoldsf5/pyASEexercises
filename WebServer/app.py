@@ -15,15 +15,15 @@ class ASEWebServer(BaseHTTPRequestHandler):
 
     def do_index(self):
         r = open("index.html", "r")
-        self.wfile.write(bytes(r.read(), "utf8"))
         self._respond(200, 'text/html')
+        self.wfile.write(bytes(r.read(), "utf8"))
 
     def do_data(self):
         reply = []
         for d in pyPOSTs.find():
             reply.append(self._clean_doc(d["_id"]))
-        self.wfile.write(bytes(json.dumps(reply), 'utf8'))
         self._respond(200, 'text/json')
+        self.wfile.write(bytes(json.dumps(reply), 'utf8'))
 
     def do_GET(self):
         if self.path == '/data':
@@ -37,12 +37,12 @@ class ASEWebServer(BaseHTTPRequestHandler):
             post_body = self.rfile.read(content_len).decode("UTF-8")
             data = json.loads(post_body)
             result = pyPOSTs.insert_one(data)
-            self.wfile.write(bytes(json.dumps(self._clean_doc(result.inserted_id), 'utf8')))
             self._respond(200, 'text/json')
+            self.wfile.write(bytes(json.dumps(self._clean_doc(result.inserted_id), 'utf8')))
         except Exception as e:
             print("error: " + str(e))
-            self.wfile.write(bytes(json.dumps(dict(error=str(e))), 'utf8'))
             self._respond(400, 'text/json')
+            self.wfile.write(bytes(json.dumps(dict(error=str(e))), 'utf8'))
             
 def run():
   server_address = ('', 8080)
