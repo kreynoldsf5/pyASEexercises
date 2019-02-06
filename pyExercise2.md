@@ -10,5 +10,11 @@ _Goal:_ Create an HTTP POST request which posts your name and a message. Our web
 ```
 
 
+<details><summary>Interactive Solution</summary>
+<p>
 
+![Exercise2](./gifs/pyExercise2.gif)
+      
+</p>
+</details>
 
