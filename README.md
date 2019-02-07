@@ -37,7 +37,7 @@ import requests
 ###your code here###
 ```
 
-<details><summary>Optional </summary>
+<details><summary>Optional</summary>
 <p>
 
 If you are comfortable with git, clone the repo, create a branch, and collect your answers in directory under the [answers](./answers) directory of the repository. Initiate a [pull request](https://help.github.com/articles/about-pull-requests/) when you're done.
@@ -67,24 +67,24 @@ _15min_
 <p>
 
 Update the WebServer, [app.py](./WebServer/app.py) to be a little more useful. Here are some ideas:
-* Display a proper error page when recieving requests for paths that don't exist.
+Display a proper error page when recieving requests for paths that don't exist.
 ```bash
 $ curl http://example.app/foo
 HTTP/1.0 404 NOT FOUND
 ```
-* Implement a URI routing scheme that displays individual database entries based on path.
+Implement a URI routing scheme that displays individual database entries based on path.
 ```bash
 $ curl http://example.app/kevin
 {'name': 'kevin', 'message': 'calmer than you are'}
 HTTP/1.0 200 OK
 ```
-* Implement the DELETE http method to remove an individual record.
+Implement the DELETE http method to remove an individual record.
 ```bash
 $ curl -X DELETE http://example.app/kevin
 {'response': 'db entry "kevin" deleted'}
 HTTP/1.0 200 OK
 ```
-* Any other modification you want.
+Or any other modification you want.
       
 </p>
 </details>
