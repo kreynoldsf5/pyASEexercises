@@ -1,7 +1,7 @@
 
 # ASE Python Exercises
 
-Python is an extremely common language throughout organizations -- but especially with Network Operations (NetOps) teams. Before these exercises are attempted, you should have completed the provided Python training from [Code Academy](https://www.codecademy.com/learn/learn-python-3).
+Python is an extremely common language throughout organizations -- but especially with Network Operations (NetOps) teams. Before these exercises are attempted, you should have completed the provided Python training from [Code Academy](https://www.codecademy.com/learn/learn-python-3). These exercises focus on making HTTP requests and manipulating response data using the Python _Requests_ library. NetOps Python uses commonly involve interacting with 
 
 ## [Overview](./pyOverview.md)
 
@@ -75,5 +75,5 @@ HTTP/1.0 200 OK
 ```
 * Any other modification you want.
 
-
+[Start on Exercise 1.](./pyExercise1.md)
 
