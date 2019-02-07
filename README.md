@@ -40,7 +40,7 @@ import requests
 <details><summary>Optional </summary>
 <p>
 
-If you are comfortable with git clone the repo, create a branch, and collect your answers in directory under the [answers](./answers) directory of the repository. Initiate a [pull request](https://help.github.com/articles/about-pull-requests/) when you're done.
+If you are comfortable with git, clone the repo, create a branch, and collect your answers in directory under the [answers](./answers) directory of the repository. Initiate a [pull request](https://help.github.com/articles/about-pull-requests/) when you're done.
       
 </p>
 </details>
@@ -63,9 +63,10 @@ Return the contents of the database (GET to /data) and store as the appropiate P
 
 _15min_
 
-#### Extra Credit
+<details><summary>Optional Advanced Exercises</summary>
+<p>
 
-Update app.py to be a little more useful. Here are some ideas:
+Update the WebServer, [app.py](./WebServer/app.py) to be a little more useful. Here are some ideas:
 * Display a proper error page when recieving requests for paths that don't exist.
 ```bash
 $ curl http://example.app/foo
@@ -84,6 +85,10 @@ $ curl -X DELETE http://example.app/kevin
 HTTP/1.0 200 OK
 ```
 * Any other modification you want.
+      
+</p>
+</details>
+
 
 [Start on Exercise 1.](./pyExercise1.md)
 
