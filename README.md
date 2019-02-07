@@ -67,6 +67,7 @@ _15min_
 <p>
 
 Update the WebServer, [app.py](./WebServer/app.py) to be a little more useful. Here are some ideas:
+
 Display a proper error page when recieving requests for paths that don't exist.
 ```bash
 $ curl http://example.app/foo
@@ -84,11 +85,11 @@ $ curl -X DELETE http://example.app/kevin
 {'response': 'db entry "kevin" deleted'}
 HTTP/1.0 200 OK
 ```
-Or any other modification you want.
+Or any other modification you'd like. 
       
 </p>
 </details>
 
 
-[Start on Exercise 1.](./pyExercise1.md)
+[Start on Exercise 1](./pyExercise1.md)
 

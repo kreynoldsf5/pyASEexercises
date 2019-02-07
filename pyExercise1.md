@@ -26,4 +26,5 @@ import requests
 </details>
 
 [Move on to Exercise 2](./pyExercise2.md)
+
 [Return to the README.md](./README.md)
