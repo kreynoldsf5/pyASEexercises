@@ -11,6 +11,8 @@ Our web application expects a [JSON](https://www.json.org/) payload which, minim
 }
 ```
 
+## JSON encoding
+
 Recall the various data types in Python. Here is a mapping of Python data types to [JSON object types](https://www.json.org/).
 
 
@@ -24,35 +26,52 @@ Recall the various data types in Python. Here is a mapping of Python data types 
 | False	           | false  |
 | None	           | null   |
 
-What Python data type is your request payload (and a successful response body)?
+The Python [json](https://docs.python.org/3/library/json.html) library can be used to easily create JSON strings from Python data types (_json.dumps()_) and create Python data types from JSON strings (_json.loads()_). What Python data type is your request payload (and a successful response body)? 
 
+In this example, we'll start with a Python data structure (a dictionary) and we'll finish with a JSON string.
+![Exercise1](./gifs/pyExample1.gif)
+
+Note the subtle differences between these objects.
 ```python
-#Do a GIF of this.
-data = {
-    "president": {
-        "name": "Zaphod Beeblebrox",
-        "species": "Betelgeusian"
-    }
-}
-deSerialData = json.dump(data)
-type(deSerialData)
+>>> data
+{'name': 'kevin', 'message': 'this is a message'}
+>>> type(data)
+<class 'dict'>
+>>> dataJSON = json.dumps(data)
+>>> dataJSON
+'{"name": "kevin", "message": "this is a message"}'
+>>> type(dataJSON)
+<class 'str'>
 ```
 
-```python
->>> payload = {'key1': 'value1', 'key2': 'value2'}
+### POSTing Payload
 
->>> r = requests.post("https://httpbin.org/post", data=payload)
->>> print(r.text)
-{
-  ...
-  "form": {
-    "key2": "value2",
-    "key1": "value1"
-  },
-  ...
-}
+Now that we know how to generate JSON from python data structures, we need to pass that data as a POST payload. The Python _Requests_ library documentation provides sufficient [examples](http://docs.python-requests.org/en/master/user/quickstart/#more-complicated-post-requests).
+
+```python
+>>> import json
+
+>>> url = 'https://api.github.com/some/endpoint'
+>>> payload = {'some': 'data'}
+
+>>> r = requests.post(url, data=json.dumps(payload))
 ```
-show that 'payload' is not quite JSON (although it looks alot like that)
+
+In later versions of the Python _Requests_ library JSON encoding is natively supported (but deserialization, _json.dumps()_ is still a valuable skill).
+
+```python
+>>> url = 'https://api.github.com/some/endpoint'
+>>> payload = {'some': 'data'}
+
+>>> r = requests.post(url, json=payload)
+```
+
+### Putting it all together
+
+Now we simply need to:
+* Create our payload
+* Send the POST
+* Validate the response
 
 
 <details><summary>Interactive Solution</summary>
