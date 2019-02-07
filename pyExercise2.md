@@ -57,7 +57,7 @@ Now that we know how to generate JSON from python data structures, we need to pa
 >>> r = requests.post(url, data=json.dumps(payload))
 ```
 
-In later versions of the Python _Requests_ library JSON encoding is natively supported (but deserialization, _json.dumps()_ is still a valuable skill).
+In later versions of the Python _Requests_ library JSON encoding is natively supported (but deserialization, _json.dumps()_, is still a valuable skill).
 
 ```python
 >>> url = 'https://api.github.com/some/endpoint'
@@ -73,6 +73,7 @@ Now we simply need to:
 * Send the POST
 * Validate the response
 
+Prepare your script. Note that each entry in the database *must* have a unique name. Please let me know if you need an entry removed.
 
 <details><summary>Interactive Solution</summary>
 <p>
