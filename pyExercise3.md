@@ -22,6 +22,33 @@ Based on the chart of Python data types to JSON data types, the deserialized res
 
 ## Data Manipulation
 
+Like most programming languages, there are several ways to search a list of dictionaries in Python. Here is a common function for the task using a [list comprehension](link).
+
+```python
+def search_dictionaries(key, value, list_of_dictionaries):
+    return [element for element in list_of_dictionaries if element[key] == value]
+```
+
+![Example3](./gifs/pyExample3.gif)
+
+<details><summary>Additional Explanation</summary>
+<p>
+
+The basic syntax is:
+```
+[ expression for elememt in list if conditional ]
+```
+This is equivalent to:
+```
+for element in list:
+    if conditional:
+        expression
+```
+      
+</p>
+</details>
+
+
 ## Putting it together 
 
 Now write your script for the exercise.
