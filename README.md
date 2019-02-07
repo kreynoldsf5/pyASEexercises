@@ -1,13 +1,15 @@
 
 # ASE Python Exercises
 
-Python is an extremely common language throughout organizations -- but especially with Network Operations (NetOps) teams. Before these exercises are attempted, you should have completed the provided Python training from [Code Academy](https://www.codecademy.com/learn/learn-python-3). These exercises focus on making HTTP requests and manipulating response data using the Python _Requests_ library. NetOps Python uses commonly involve interacting with 
+Python is an extremely common language throughout organizations -- but especially with Network Operations (NetOps) teams. Before these exercises are attempted you should have completed the provided Python training from [Code Academy](https://www.codecademy.com/learn/learn-python-3). 
 
-## [Overview](./pyOverview.md)
+NetOps Python use cases commonly involve interacting with RESTful APIs. These exercises focus on making HTTP requests and manipulating response data using the Python _Requests_ library. 
 
-First, verify that you have proper environment to perform the exercises. Python3 should be [installed](./pyEnvSetup.md) on your machine. A text editor with IDE functionality would also be useful ([Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), [Notepad++](https://notepad-plus-plus.org/)).
+## Overview
 
-Secondly, we'll do a lightening round overview of the content from the learning path. We'll briefly touch on the fundamental concepts from the self-study.
+First, verify that you have proper environment to perform the exercises. Python3 should be [installed](./pyEnvSetup.md) on your machine. A text editor with IDE functionality would also be useful ([Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), [Notepad++](https://notepad-plus-plus.org/), etc).
+
+Secondly, we'll do a [lightening round overview](./pyOverview.md) of the content from the learning path. We'll briefly touch on the fundamental concepts from the self-study.
 
 _15 min_
 
@@ -35,9 +37,17 @@ import requests
 ###your code here###
 ```
 
+<details><summary>Optional </summary>
+<p>
+
+If you are comfortable with git clone the repo, create a branch, and collect your answers in directory under the [answers](./answers) directory of the repository. Initiate a [pull request](https://help.github.com/articles/about-pull-requests/) when you're done.
+      
+</p>
+</details>
+
 #### [Exercise 1](./pyExercise1.md)
 
-Craft a GET request to / and ***print()*** the returned html.
+Craft a GET request to / and *print()* the returned html.
 
 _10min_
 

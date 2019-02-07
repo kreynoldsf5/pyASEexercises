@@ -83,4 +83,5 @@ Prepare your script. Note that each entry in the database *must* have a unique n
 </p>
 </details>
 
-[Move on to Exercise 3.](./pyExercise3.md)
+[Move on to Exercise 3](./pyExercise3.md)
+[Return to the README.md](./README.md)
