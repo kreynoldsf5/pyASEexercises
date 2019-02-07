@@ -16,13 +16,13 @@ Like [Exercise 1](./pyExercise1.md), make an HTTP GET request to our [webserver]
 | False	           | false  |
 | None	           | null   |
 
-Based on the chart of Python data types to JSON data types, the deserialized response should yield Python list of dictionaries.
+Based on the chart of Python data types to JSON data types, the deserialized response should yield a Python list of dictionaries.
 
 ![Example2](./gifs/pyExample2.gif)
 
 ## Data Manipulation
 
-Like most programming languages, there are several ways to search a list of dictionaries in Python. Here is a common function for the task using a [list comprehension](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions).
+There are several ways to search a list of dictionaries in Python. Here is a common function for the task using a [list comprehension](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions).
 
 ```python
 def search_dictionaries(key, value, list_of_dictionaries):
@@ -34,9 +34,9 @@ def search_dictionaries(key, value, list_of_dictionaries):
 <details><summary>Additional Explanation</summary>
 <p>
 
-The basic syntax is:
+The list comprehension syntax is:
 ```
-[ expression for elememt in list if conditional ]
+[ expression for element in list if conditional ]
 ```
 This is equivalent to:
 ```
@@ -54,12 +54,13 @@ for element in list:
 Now write your script for the exercise.
 * send a GET request to "/data"
 * deserialize the response into a Python Object
-* find the _message_ from you or one of your peers based on the _name_ value.
+* find the _message_ from your POST or one of your peers' POSTs based on the _name_ value.
 
 <details><summary>Interactive Solution</summary>
 <p>
 
 ![Exercise3](./gifs/pyExercise3.gif)
-      
+
+_Note:_ A Python list is returned. This list will only have one element in this exercise as the DB index enforces unique values for "_name_".  
 </p>
 </details>
