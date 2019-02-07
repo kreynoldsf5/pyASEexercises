@@ -34,3 +34,11 @@ switched to db ASEexample
 > db.pyPOSTs.remove({"name": "kevin"})
 WriteResult({ "nRemoved" : 1 })
 ```
+
+```json
+[
+	{ "name": "Author", "message": "vaguely remembering something about a bypass" },
+	{ "name": "Ford", "message": "bring your towel" },
+	{ "name": "Marvin", "message": "I'm not feeling well." }
+]
+```
