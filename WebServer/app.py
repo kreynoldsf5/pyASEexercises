@@ -38,7 +38,7 @@ class ASEWebServer(BaseHTTPRequestHandler):
             data = json.loads(post_body)
             result = pyPOSTs.insert_one(data)
             self._respond(200, 'text/json')
-            self.wfile.write(bytes(json.dumps(self._clean_doc(result.inserted_id), 'utf8')))
+            self.wfile.write(bytes(json.dumps(self._clean_doc(result.inserted_id)), 'utf8'))
         except Exception as e:
             print("error: " + str(e))
             self._respond(400, 'text/json')
