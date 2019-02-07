@@ -18,7 +18,7 @@ Like [Exercise 1](./pyExercise1.md), make an HTTP GET request to our [webserver]
 
 Based on the chart of Python data types to JSON data types, the deserialized response should yield Python list of dictionaries.
 
-![Example2](.gifs/pyExample2.gif)
+![Example2](./gifs/pyExample2.gif)
 
 ## Data Manipulation
 
