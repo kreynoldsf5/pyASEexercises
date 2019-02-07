@@ -9,7 +9,7 @@ NetOps Python use cases commonly involve interacting with RESTful APIs. These ex
 
 First, verify that you have proper environment to perform the exercises. Python3 should be [installed](./pyEnvSetup.md) on your machine. A text editor with IDE functionality would also be useful ([Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), [Notepad++](https://notepad-plus-plus.org/), etc).
 
-Secondly, we'll do a [lightening round overview](./pyOverview.md) of the content from the learning path. We'll briefly touch on the fundamental concepts from the self-study.
+Secondly, we'll do a [lightning round overview](./pyOverview.md) of the content from the learning path. We'll briefly touch on the fundamental concepts from the self-study.
 
 _15 min_
 
