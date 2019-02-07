@@ -3,7 +3,7 @@
 You will need to prepare your local environment to run Python. Recall from the prerequisite work that are targeting Python 3 (because Python 2 will soon be deprecated).
 
 ## Windows Machines
-Download the [Python installer](https://www.python.org/ftp/python/3.7.2/python-3.7.2-webinstall.exe). *PIP*, the python package manager, is included in this install.
+Download the [Python installer](https://www.python.org/ftp/python/3.7.2/python-3.7.2-webinstall.exe). Choose to 'Add Python to your path' when running the installer. *PIP*, the python package manager, is included in this install.
 
 ## MacOS Machines
 MacOS comes with a system install of python but its quite dated. 
@@ -35,4 +35,13 @@ $ python3
 ```bash
 $ pip install requests
 ```
-Note that this package might already be installed. 
+Note that this package might already be installed.
+
+## Running a Python Script
+```
+C:\User>python example1.py
+```
+or
+```bash
+$ python3 example1.py
+```

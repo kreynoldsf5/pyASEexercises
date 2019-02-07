@@ -1,7 +1,22 @@
 # Exercise 3
 
-_Goal:_ Create an HTTP GET request to /data. Deserialize the response JSON into a Python data type.
+_Goal:_ Create an HTTP GET request to /data. Deserialize the response JSON into a Python data type, manipulate the data.
 
+Like [Exercise 1](./pyExercise1.md), make an HTTP GET request to our [webserver](http://ec2-54-191-220-106.us-west-2.compute.amazonaws.com) -- this time to "[/data](http://ec2-54-191-220-106.us-west-2.compute.amazonaws.com/data)". The response will contain all POST payloads made by your peers in [Exercise 2](./pyExercise2.md) in a JSON array. A JSON array value must be of type string, number, object, array, boolean or _null_. This response will be a JSON array of JSON objects. 
+
+| Python           | JSON   |
+|------------------|--------|
+| dict	           | object |
+| list, tuple	   | array  |
+| str	           | string |
+| int, long, float | number |
+| True	           | true   |
+| False	           | false  |
+| None	           | null   |
+
+Based on the chart of Python data types to JSON data types, the deserialized response should yield Python list of dictionaries.
+
+![Example2](.gifs/pyExample2.gif)
 
 
 

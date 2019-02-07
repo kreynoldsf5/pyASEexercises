@@ -6,7 +6,7 @@ Python has an extremely useful socket library to deal with system networking and
 
 The Requests library is well [documented](http://docs.python-requests.org/en/master/) including specific [examples](http://docs.python-requests.org/en/master/user/quickstart/#make-a-request). Please take a few minutes to read through the documentation.
 
-The target webserver is currently deployed in AWS at [http://ec2-54-191-220-106.us-west-2.compute.amazonaws.com](http://ec2-54-191-220-106.us-west-2.compute.amazonaws.com). Feel free to use the interpreter (per the documentation examples) for working out the exercise but please create executable scripts for your exercise answers (for easier sharing).
+The target webserver is currently deployed in AWS at [http://ec2-54-191-220-106.us-west-2.compute.amazonaws.com](http://ec2-54-191-220-106.us-west-2.compute.amazonaws.com). For this exercise, make an HTTP GET request to the root (/). Feel free to use the interpreter (per the documentation examples) for working out the exercise but please create executable scripts for your exercise answers (for easier sharing).
 
 Let me get you started.
 

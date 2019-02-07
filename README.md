@@ -5,7 +5,9 @@ Python is an extremely common language throughout organizations -- but especiall
 
 ## [Overview](./pyOverview.md)
 
-First, we'll do a lightening round overview of the content from the learning path. We'll briefly touch on the fundamental concepts from the self-study.
+First, verify that you have proper environment to perform the exercises. Python3 should be [installed](./pyEnvSetup.md) on your machine. A text editor with IDE functionality would also be useful ([Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), [Notepad++](https://notepad-plus-plus.org/)).
+
+Secondly, we'll do a lightening round overview of the content from the learning path. We'll briefly touch on the fundamental concepts from the self-study.
 
 _15 min_
 
