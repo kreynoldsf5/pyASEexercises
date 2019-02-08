@@ -4,7 +4,7 @@ _Goal:_ Create an HTTP GET request to /data. Deserialize the response JSON into 
 
 ## Deserialization
 
-Like [Exercise 1](./pyExercise1.md), make an HTTP GET request to our [webserver](http://ec2-54-191-220-106.us-west-2.compute.amazonaws.com) -- this time to "[/data](http://ec2-54-191-220-106.us-west-2.compute.amazonaws.com/data)". The response will contain all POST payloads made by your peers in [Exercise 2](./pyExercise2.md) in a JSON array. A JSON array value must be of type string, number, object, array, boolean or _null_. This response will be a JSON array of JSON objects. 
+Like [Exercise 1](./pyExercise1.md), make an HTTP GET request to our [webserver](http://ec2-54-191-220-106.us-west-2.compute.amazonaws.com) -- this time to "[/data](http://ec2-54-191-220-106.us-west-2.compute.amazonaws.com/data)". The response will contain all POST payloads made by your peers in [Exercise 2](./pyExercise2.md) in a JSON array. A JSON array value must be of type string, number, object, array, boolean or _null_. This response will be a JSON array of JSON objects. Recall this table:
 
 | Python           | JSON   |
 |------------------|--------|
@@ -16,13 +16,13 @@ Like [Exercise 1](./pyExercise1.md), make an HTTP GET request to our [webserver]
 | False	           | false  |
 | None	           | null   |
 
-Based on the chart of Python data types to JSON data types, the deserialized response should yield a Python list of dictionaries.
+Based on the chart of Python data types to JSON data types, the deserialized response should yield a Python ``list`` of ``dictionaries``.
 
 ![Example2](./gifs/pyExample2.gif)
 
 ## Data Manipulation
 
-There are several ways to search a list of dictionaries in Python. Here is a common function for the task using a [list comprehension](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions).
+There are several ways to search a list of dictionaries in Python. Here is a common function for the task using a [list comprehension](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions). Simply pass in the _key_ name you want to search (``name``), the _value_ you are looking for (``Marvin``), and the dictionary you'd like to search and the function will return a list of elements that match your criteria.
 
 ```python
 def search_dictionaries(key, value, list_of_dictionaries):

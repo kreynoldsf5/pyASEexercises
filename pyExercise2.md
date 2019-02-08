@@ -29,7 +29,7 @@ Recall the various data types in Python. Here is a mapping of Python data types 
 The Python [json](https://docs.python.org/3/library/json.html) library can be used to easily create JSON strings from Python data types (_json.dumps()_) and create Python data types from JSON strings (_json.loads()_). What Python data type is your request payload (and a successful response body)? 
 
 In this example, we'll start with a Python data structure (a dictionary) and we'll finish with a JSON string.
-![Exercise1](./gifs/pyExample1.gif)
+![Example1](./gifs/pyExample1.gif)
 
 Note the subtle differences between these objects.
 ```python
@@ -57,7 +57,7 @@ Now that we know how to generate JSON from python data structures, we need to pa
 >>> r = requests.post(url, data=json.dumps(payload))
 ```
 
-In later versions of the Python _Requests_ library JSON encoding is natively supported (but deserialization, _json.dumps()_, is still a valuable skill).
+In later versions of the Python _Requests_ library JSON encoding is natively supported (but deserialization, _json.loads()_, is still a valuable skill).
 
 ```python
 >>> url = 'https://api.github.com/some/endpoint'

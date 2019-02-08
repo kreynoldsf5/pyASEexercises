@@ -1,13 +1,13 @@
 
 # ASE Python Exercises
 
-Python is an extremely common language throughout organizations -- but especially with Network Operations (NetOps) teams. Before these exercises are attempted you should have completed the provided Python training from [Code Academy](https://www.codecademy.com/learn/learn-python-3). 
+Python is an extremely common language throughout IT organizations -- but especially with Network Operations (NetOps) teams. Before these exercises are attempted you should have completed the provided Python training from [Code Academy](https://www.codecademy.com/learn/learn-python-3). 
 
 NetOps Python use cases commonly involve interacting with RESTful APIs. These exercises focus on making HTTP requests and manipulating response data using the Python _Requests_ library. 
 
 ## Overview
 
-First, verify that you have proper environment to perform the exercises. Python3 should be [installed](./pyEnvSetup.md) on your machine. A text editor with IDE functionality would also be useful ([Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), [Notepad++](https://notepad-plus-plus.org/), etc).
+First, verify that you have a proper environment to perform the exercises. Python3 should be [installed](./pyEnvSetup.md) on your machine. A text editor with IDE functionality would also be useful ([Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), [Notepad++](https://notepad-plus-plus.org/), etc).
 
 Secondly, we'll do a [lightning round overview](./pyOverview.md) of the content from the learning path _applicable to these exercises_.
 
@@ -17,7 +17,7 @@ _15 min_
 
 These exercises will focus on creating HTTP requests in Python. We'll build upon this exercise for our JavaScript review next week.
 
-I've written a small web server with a database backend (mongoDB) in Python (~50 lines). The [app](./WebServer/app.py) is packaged in two docker containers and can be easily built/run on any docker host. 
+I've written a small web server with a database backend (mongoDB) in Python (~50 lines). The [app](./WebServer/app.py) is packaged in two docker containers and can be easily built/run on any docker host if you want to experiment with it later. 
 
 The webserver will respond in accordance to this table:
 
@@ -29,7 +29,7 @@ The webserver will respond in accordance to this table:
 
 ### Exercise Overviews
 
-For each exercise, I have provided a solution based on running python interactively. Please package your answers in scripts so they can be easily shared.
+For each exercise, I have provided a solution based on running python interactively. Please package your answers in scripts so they can be easily shared, placed in a SCM repository, etc. Your answers will start like this:
 ```python
 #!/usr/bin/env python
 import requests
