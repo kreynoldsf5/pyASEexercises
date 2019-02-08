@@ -2,7 +2,7 @@
 
 _Goal:_ Create an HTTP GET request and display(_print()_) the results.
 
-Python has an extremely useful socket library to deal with system networking and a rich collection of modules built on top of those libraries. When interacting with a RESTful API with Python, its extremely common to use the [requests](https://github.com/requests/requests) library (it's one of the few libs included with the Python installtion on BIG-IP). We'll use this library for today's exercises.
+Python has an extremely useful socket library to deal with system networking and a rich collection of modules built on top of those libraries. When interacting with a RESTful API with Python, its extremely common to use the [requests](https://github.com/requests/requests) library (it's one of the few libs included with the Python installation on BIG-IP). We'll use this library for today's exercises.
 
 The Requests library is well [documented](http://docs.python-requests.org/en/master/) including specific [examples](http://docs.python-requests.org/en/master/user/quickstart/#make-a-request). Please take a few minutes to read through the documentation.
 
