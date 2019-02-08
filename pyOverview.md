@@ -4,21 +4,21 @@
 
 ### Strings
 ```python
->>> print("I am a string.")
-I am a string.
->>> type("I am a string.")
+>>> print("string.")
+string.
+>>> type("string.")
 <class 'str'>
 
->>> print('I am too.')
-I am too.
->>> type('I am too.')
+>>> print('also a string.')
+also a string.
+>>> type('also a string.')
 <class 'str'>
 
->>> print("This string contains a single quote (') character.")
-This string contains a single quote (') character.
+>>> print("string that contains a single quote (') character.")
+string that contains a single quote (') character.
 
->>> print('This string contains a double quote (") character.')
-This string contains a double quote (") character.
+>>> print('string that contains a double quote (") character.')
+string that contains a double quote (") character.
 ```
 ### Collection Types
 
@@ -35,27 +35,27 @@ We will be focusing on ``Lists`` and ``Dictionaries`` for this exercise.
 
 #### Lists
 ```python
->>> thislist = ["apple", "banana", "cherry"]
+>>> thislist = ["apple", "pear", "banana"]
 >>> print(thislist)
-['apple', 'banana', 'cherry']
+['apple', 'pear', 'banana']
 
 >>> print(thislist[1])
-banana
+pear
 ```
 
 #### Dictionaries
 ```python
 >>> thisdict =	{
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
+  "brand": "Nissan",
+  "model": "Leaf",
+  "year": 2018
 }
 >>> print(thisdict)
-{'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+{'brand': 'Nissan', 'model': 'Leaf', 'year': 2018}
 
 >>> x = thisdict["model"]
 >>> print(x)
-Mustang
+Leaf
 ```
 
 ## Functions
